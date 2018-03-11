@@ -1,0 +1,37 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="about-me">
+  <template>
+    <style>
+      .content {
+        display: grid;
+        grid-template-columns: 25% 50%;
+        grid-gap: 20px;
+      }
+      .begin {
+        font-size: 20px;
+      }
+    </style>
+    <div class="content">
+      <div class="begin">
+        Hello, my name is Alan Xu.
+      </div>
+      <div class="middle">
+        I graduated with a Bachelor of Science in Computer Science from UC San Diego.
+        I am a Software Engineer focusing on front-end development @
+        <span>
+          <a href="http://www.avitas-systems.com/" target="_blank">Avitas Systems,</a>
+        </span>
+        a GE Venture. In my free time I enjoy traveling, soccer, snowboarding,
+        coffee, and hanging out with my bird, Dexter.
+      </div>
+    </div>
+  </template>
+  <script>
+    class AboutMe extends Polymer.Element {
+      static get is() { return 'about-me'; }
+    }
+
+    customElements.define(AboutMe.is, AboutMe);
+  </script>
+</dom-module>

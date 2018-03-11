@@ -1,0 +1,24 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="social-media-links">
+  <template>
+    <style>
+      .content {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+      }
+    </style>
+    <div class=content>
+      <div>LinkedIn</div>
+      <div>Github</div>
+      <div>Email</div>
+    </div>
+  </template>
+  <script>
+    class SocialMediaLinks extends Polymer.Element {
+      static get is() { return 'social-media-links'; }
+    }
+
+    customElements.define(SocialMediaLinks.is, SocialMediaLinks);
+  </script>
+</dom-module>
