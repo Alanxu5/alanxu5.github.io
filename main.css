@@ -1,30 +1,4 @@
-html, body {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 25% auto;
-  grid-template-areas:
-    ". header"
-    "sidebar content";
-}
-
 .content {
-  grid-area: content;
   display: grid;
-  grid-template-rows: 60% 40%;
-  grid-template-areas:
-    "info"
-    "links";
-}
-
-.info {
-  grid-area: info;
-}
-
-.links {
-  grid-area: links;
+  grid-template-rows: auto auto;
 }

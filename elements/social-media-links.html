@@ -5,23 +5,27 @@
     <style>
       .content {
         display: grid;
-        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
       }
 
       .icons {
-        width: 50px;
-        height: 50px;
+        width: 25%;
+        height: 25%;
       }
     </style>
     <div class=content>
       <a href="https://www.linkedin.com/in/alanxu5/" target="_blank">
-        <img class="icons" src="images/linkedin.svg" alt="LinkedIn"></img>
+        <img class="icons" src="images/linkedin.svg" alt="LinkedIn">
       </a>
       <a href="https://github.com/Alanxu5" target="_blank">
-        <img class="icons" src="images/github.svg" alt="Github"></img>
+        <img class="icons" src="images/github.svg" alt="Github">
       </a>
-      <img class="icons" src="images/email.svg" alt="Email"></img>
-      <img class="icons" src="images/download-arrow.svg" alt="Resume"></img>
+      <a>
+        <img class="icons" src="images/email.svg" alt="Email">
+      </a>
+      <a href="https://www.overleaf.com/read/jvgfxxbmtyrt" target="_blank">
+        <img class="icons" src="images/download-arrow.svg" alt="Resume">
+      </a>
     </div>
   </template>
   <script>
